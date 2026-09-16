@@ -7,6 +7,8 @@ html { scroll-snap-type: y proximity; }
 .personal-strengths li { display: grid; grid-template-columns: 3.2rem minmax(0,1fr); gap: .9rem; align-items: center; padding-block: .55rem; border-bottom: 1px solid #e6e7e9; }
 .strength-marker { display: flex; align-items: center; justify-content: center; }
 .strength-marker svg { width: 2.15rem; height: 2.15rem; padding: .48rem; border-radius: .8rem; background: #e6f4fb; color: #0079bc; stroke-width: 1.9; }
+.strength-marker.strength-bankware-marker { width: 3.15rem; height: 3.15rem; border-radius: .8rem; background: #e6f4fb; }
+.strength-marker .strength-bankware-symbol { display: block; width: 2.55rem; height: 2.55rem; object-fit: contain; }
 .talent-symbol { position: relative; display: inline-block; flex: none; width: 3rem; height: 3rem; overflow: hidden; vertical-align: middle; }
 .talent-symbol img { position: absolute; display: block; width: 140%; height: 140%; max-width: none; left: 50%; top: 50%; object-fit: contain; transform: translate(-50%,-50%); }
 .talent-symbol-discipline img { width: 164%; height: 164%; top: 46%; left: 45%; }

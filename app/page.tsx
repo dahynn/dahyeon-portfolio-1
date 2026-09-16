@@ -38,7 +38,7 @@ const activities = [
   { date: '2024.09–2025.02', title: 'University of Lancashire', detail: '영국 교환학생 · 최우수 성적' },
   { date: '2025.03–2025.06', title: '구름톤 유니브 4기', detail: '개발자 커뮤니케이션' },
   { date: '2025.07–2026.06', title: '삼성청년SW·AI 아카데미 14기', detail: '자바 · 스프링 기반 백엔드 개발' },
-  { date: '2025.08', title: '한화금융캠퍼스 15기', detail: '금융 실무 교육 · 현직자 멘토링' },
+  { date: '2026.08', title: '한화금융캠퍼스 15기', detail: '금융 실무 교육 · 현직자 멘토링' },
 ];
 const awards = [
   { date: '2025.11', awardedOn: '2025-11', title: 'AICompS 2025 Best Poster Award', issuer: '한국정보처리학회' },

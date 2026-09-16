@@ -716,15 +716,15 @@ a { color:inherit; text-decoration:none; }
   .profile-values img { width:54px; height:54px; }
 }
 
-/* 여정선 마감: 작은 지점과 한화 오렌지로 짙어지는 흐름 */
+/* 여정선: 뱅크웨어글로벌 블루 계열로 이어지는 흐름 */
 .journey-item { --line-color:#d9edf8; }
 .journey-item:nth-child(2) { --line-color:#c8e6f5; }
-.journey-item:nth-child(3) { --line-color:#f8cab0; }
+.journey-item:nth-child(3) { --line-color:#b7dff2; }
 .journey-item:nth-child(4) { --line-color:#addcf2; }
 .journey-item:nth-child(5) { --line-color:#8fcfec; }
-.journey-item:nth-child(6) { --line-color:#f5a06a; }
+.journey-item:nth-child(6) { --line-color:#78c5e9; }
 .journey-item:nth-child(7) { --line-color:#3fb3e8; }
-.journey-item:nth-child(8) { --line-color:#f47f3a; }
+.journey-item:nth-child(8) { --line-color:#249bd4; }
 .journey-item:nth-child(9) { --line-color:#0079bc; }
 .journey-dot {
   margin:0;
@@ -848,8 +848,8 @@ a { color:inherit; text-decoration:none; }
   left:0;
   width:2rem;
   height:calc(24px + 2.75rem);
-  border-bottom:2px solid var(--orange);
-  border-left:2px solid var(--orange);
+  border-bottom:2px solid #0079bc;
+  border-left:2px solid #0079bc;
   border-bottom-left-radius:1rem;
   content:"";
 }
@@ -1532,19 +1532,20 @@ a { color:inherit; text-decoration:none; }
 }
 #introduction .personal-strengths li {
   display:grid;
-  grid-template-columns:34px minmax(0,1fr);
+  grid-template-columns:3.15rem minmax(0,1fr);
   align-items:center;
   gap:12px;
   min-height:104px;
-  padding:14px clamp(14px,1.7vw,24px);
+  min-width:0;
+  padding:14px clamp(10px,1.3vw,18px);
   border:0;
   border-left:1px solid rgba(255,255,255,.16);
 }
 #introduction .personal-strengths li:first-child { padding-left:clamp(14px,1.7vw,24px); border-left:0; }
 #introduction .strength-marker { margin:0; }
 #introduction .talent-symbol { width:30px; height:30px; }
-#introduction .personal-strengths h3 { margin:0; color:#fff; font-size:clamp(13px,1.05vw,15px); font-weight:780; letter-spacing:-.055em; line-height:1.35; }
-#introduction .personal-strengths p { margin:5px 0 0; color:#c9cbd0; font-size:clamp(10px,.8vw,11px); font-weight:560; letter-spacing:-.04em; line-height:1.55; word-break:keep-all; }
+#introduction .personal-strengths h3 { min-width:0; margin:0; color:#fff; font-size:clamp(13px,1.05vw,15px); font-weight:780; letter-spacing:-.055em; line-height:1.35; overflow-wrap:anywhere; }
+#introduction .personal-strengths p { min-width:0; margin:5px 0 0; color:#c9cbd0; font-size:clamp(10px,.8vw,11px); font-weight:560; letter-spacing:-.04em; line-height:1.55; word-break:keep-all; overflow-wrap:anywhere; }
 #introduction .cover-secondary {
   display:grid;
   grid-template-columns:minmax(0,1.05fr) minmax(290px,.95fr);
@@ -1598,7 +1599,7 @@ a { color:inherit; text-decoration:none; }
   #introduction .profile-details>h1 .cover-title-follow { margin-left:25px; }
   #introduction .personal-strengths { margin:30px 0; padding:8px; }
   #introduction .personal-strengths ol { grid-template-columns:1fr; }
-  #introduction .personal-strengths li,#introduction .personal-strengths li:first-child { display:grid; grid-template-columns:34px minmax(0,1fr); min-height:0; gap:12px; padding:14px; border-left:0; border-top:1px solid rgba(255,255,255,.16); }
+  #introduction .personal-strengths li,#introduction .personal-strengths li:first-child { display:grid; grid-template-columns:3.15rem minmax(0,1fr); min-height:0; gap:12px; padding:14px; border-left:0; border-top:1px solid rgba(255,255,255,.16); }
   #introduction .personal-strengths li:first-child { border-top:0; }
   #introduction .strength-marker { margin:0; }
   #introduction .cover-secondary { grid-template-columns:1fr; }
