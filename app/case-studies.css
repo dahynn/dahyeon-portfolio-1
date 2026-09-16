@@ -391,8 +391,8 @@ html { scroll-snap-type: y proximity; }
 .project-store .index-heading { width: min(100%, 84rem); margin-bottom: clamp(1.5rem, 3vh, 2.75rem); }
 .store-kicker { margin: 0 0 .4rem; color: #0079bc; font-size: .72rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .store-list { width: min(100%, 84rem); }
-.store-item { position: relative; display: grid; grid-template-columns: minmax(19rem, 1.24fr) minmax(14rem, .94fr) minmax(9rem, .62fr) minmax(13rem, .9fr) auto; align-items: center; gap: 0; min-height: 12.25rem; padding: 1.25rem 0 1.6rem; border-top: 1px solid #ffb992; }
-.store-item:last-child { border-bottom: 1px solid #ffb992; }
+.store-item { position: relative; display: grid; grid-template-columns: minmax(19rem, 1.24fr) minmax(14rem, .94fr) minmax(9rem, .62fr) minmax(13rem, .9fr) auto; align-items: center; gap: 0; min-height: 12.25rem; padding: 1.25rem 0 1.6rem; border-top: 1px solid #b7dff2; }
+.store-item:last-child { border-bottom: 1px solid #b7dff2; }
 .store-item + .store-item::before { display: none; }
 .store-project-intro { display: grid; grid-template-columns: 6.75rem minmax(0, 1fr); align-items: center; gap: 1.15rem; min-width: 0; padding-right: 1.5rem; }
 .store-number { position: absolute; top: -.72rem; left: 7.9rem; padding: 0 .45rem; background: #fffdfb; color: #0079bc; font-size: .62rem; font-weight: 800; letter-spacing: .12em; }
@@ -401,7 +401,7 @@ html { scroll-snap-type: y proximity; }
 .store-copy { min-width: 0; }
 .store-copy h3 { margin: 0; color: #101827; font-size: clamp(1.55rem, 2.25vw, 2.25rem); font-weight: 800; line-height: 1.05; letter-spacing: -.065em; }
 .store-copy p { max-width: 16rem; margin: .6rem 0 0; color: #404956; font-size: .84rem; font-weight: 600; line-height: 1.45; word-break: keep-all; }
-.store-tech, .store-team, .store-role { align-self: stretch; display: grid; align-content: center; min-width: 0; padding: .4rem 1.25rem; border-left: 1px solid #ede6e1; }
+.store-tech, .store-team, .store-role { align-self: stretch; display: grid; align-content: center; min-width: 0; padding: .4rem 1.25rem; border-left: 1px solid #d7edf8; }
 .store-tech > p, .store-team > p, .store-role > p { margin: 0 0 .65rem; color: #263243; font-size: .68rem; font-weight: 800; }
 .store-tech ul { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; list-style: none; }
 .store-tech li { display: inline-flex; align-items: center; gap: .3rem; padding: .28rem .45rem; border: 1px solid #e4e4e7; border-radius: .6rem; color: #59606c; background: #fff; font-size: .64rem; font-weight: 700; white-space: nowrap; }
@@ -412,9 +412,9 @@ html { scroll-snap-type: y proximity; }
 .store-role ul { display: grid; gap: .36rem; margin: 0; padding: 0; list-style: none; }
 .store-role li { display: flex; align-items: flex-start; gap: .4rem; color: #59606c; font-size: .67rem; font-weight: 600; line-height: 1.3; word-break: keep-all; }
 .store-role li svg { flex: 0 0 auto; margin-top: .02rem; color: #0079bc; }
-.store-scroll { position: absolute; right: 0; bottom: 1rem; display: inline-flex; align-items: center; gap: .4rem; padding: .2rem 0; border-radius: 0; background: transparent; color: #f15d12; font-size: .65rem; font-weight: 800; white-space: nowrap; }
+.store-scroll { position: absolute; right: 0; bottom: 1rem; display: inline-flex; align-items: center; gap: .4rem; padding: .2rem 0; border-radius: 0; background: transparent; color: #0079bc; font-size: .65rem; font-weight: 800; white-space: nowrap; }
 .store-scroll svg { display: grid; box-sizing: content-box; padding: .2rem; color: #0079bc; transition: transform .2s ease; }
-.store-scroll:hover { background: transparent; color: #c94606; }
+.store-scroll:hover { background: transparent; color: #005c97; }
 .store-scroll:hover svg { transform: translateY(.18rem); }
 
 @media (max-width: 900px) {
@@ -468,7 +468,7 @@ html { scroll-snap-type: y proximity; }
   .store-copy h3 { font-size: 1.35rem; }
   .store-copy p { max-width: none; font-size: .78rem; }
   .store-tech { grid-column: 1; padding: 0; border: 0; }
-  .store-team { grid-column: 1; margin-top: 1rem; padding: 1rem 0 0; border: 0; border-top: 1px solid #eee6e1; }
+  .store-team { grid-column: 1; margin-top: 1rem; padding: 1rem 0 0; border: 0; border-top: 1px solid #d7edf8; }
   .store-tech > p, .store-team > p { margin-bottom: .5rem; }
   .store-role { display: none; }
   .store-scroll { right: 0; bottom: 1.1rem; margin: 0; padding: .25rem 0 .25rem .5rem; font-size: 0; }
