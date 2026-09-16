@@ -855,10 +855,11 @@ a { color:inherit; text-decoration:none; }
 }
 .journey-destination img {
   display:block;
-  width:16rem;
+  /* 180×26 원본 워드마크를 확대하지 않아 글자 가장자리가 흐려지지 않게 합니다. */
+  width:11.25rem;
   max-width:100%;
   height:auto;
-  margin:0 0 0 -2.6rem;
+  margin:0;
 }
 .journey-destination p {
   margin:.25rem 0 0;
@@ -906,18 +907,23 @@ a { color:inherit; text-decoration:none; }
   .journey-track { padding-bottom:0; }
   .journey-track::before { bottom:0; }
   .journey-destination {
-    display:flex;
-    align-items:center;
-    gap:.75rem;
+    /* 마지막 분기선의 끝에서 워드마크가 시작되도록 두 열을 맞춥니다. */
+    --destination-run:44.3%;
+    display:grid;
+    grid-template-columns:var(--destination-run) minmax(0,1fr);
+    align-items:start;
     min-width:0;
+    padding-left:0;
   }
-  .journey-destination::before { top:0; height:2.5rem; }
+  .journey-destination::before { top:0; width:var(--destination-run); height:2.5rem; }
   .journey-destination img {
+    grid-column:2;
+    grid-row:1;
     flex:0 0 auto;
-    width:14rem;
-    margin-left:-2.275rem;
+    width:11.25rem;
+    margin-left:0;
   }
-  .journey-destination p { margin:0; }
+  .journey-destination p { grid-column:2; grid-row:2; margin:.25rem 0 0; }
 }
 @media (min-width:1041px) {
   .journey-item,
@@ -930,7 +936,7 @@ a { color:inherit; text-decoration:none; }
 }
 @media (max-width:1040px) and (min-width:761px) {
   .journey-page { padding-top:5.5rem; }
-  .journey-destination { flex-wrap:wrap; row-gap:0; }
+  .journey-destination { --destination-run:28.8%; }
 }
 @media (max-width:760px) {
   .journey-page { padding-block:clamp(3rem,7svh,4.25rem); }
